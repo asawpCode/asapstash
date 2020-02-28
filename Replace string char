@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string a;
+    string b;
+
+    int len = a.size();
+
+    cin>>a;
+    cin>>b;
+
+    cout<< a.size() << " "; 
+    cout<< b.size();              //lenght of a and b
+
+    string c = a+b; cout << endl;      //sum of a and b
+
+    cout<< c << endl;
+
+    string x = a;
+    string y = b;
+    char x1 = b[0];
+    char y1 = a[0];
+    char temp1 = x1;
+    char temp2 = y1;
+
+
+    b[0] = a[0];
+    a[0] = temp1;
+
+    cout << a << " ";
+
+    a[0] = b[0];
+    b[0] = temp2;
+
+    cout << b; 
+    
+    //replaced first letter from a with the first letter from b and the first letter from b with the first letter from a
+    
+    return 0;
+}
